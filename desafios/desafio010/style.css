@@ -47,7 +47,7 @@ body > a{
 
 div#video{
     background-image: linear-gradient(to right, var(--cor5), var(--cor4)) ;
-    width: 100%;
+    
     padding: 0px -20px 0px -20px;
 }
 
@@ -75,6 +75,7 @@ header > p{
     font-size: 1.2em;
     max-width: 500px;
     text-align: center;
+    padding: 0px 10px;
     
    
     
@@ -139,19 +140,27 @@ article > p{
 }
 
 img{
-    display: block;
+    width: 100%;
     margin: auto;
 }
 
-div#video > iframe{
+img#bugdroid{
     display: block;
-    margin: auto;
-    
+    max-width: 350px;
+}
+
+div#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 div#video{
     margin: 0px -20px 30px -20px;
-    padding: 50px 20px;
+    padding-bottom: 50% ;
+    position: relative;
 }
 
 aside{
@@ -283,3 +292,5 @@ form>input:hover{
     background-color: var(--cor4);
     padding: 10px;
 }
+
+
