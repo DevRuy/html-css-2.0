@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    background-image: url(https://blog.colombo.com.br/wp-content/uploads/2016/11/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#container{
+    position: relative;
+    height: 100vh;
+
+}
+
+#conteudo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+table{
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+    box-shadow: 5px 5px 13px rgba(255, 255, 255, 0.199);
+}
+
+table:hover{
+    width: 610px;
+    height: 210px;
+}
+
+caption{
+    font-size: 1.5em;
+    font-variant: small-caps;
+    padding: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.514);
+}
+
+tr:nth-child(3){
+    background-color: dark grey;
+}
+
+td,th{
+    border: 1px solid rgb(252, 252, 252);
+    padding: 5px;
+    background-color: rgb(73, 73, 73);
+}
+
+td:hover{
+    background-color: rgb(90, 92, 92);
+}

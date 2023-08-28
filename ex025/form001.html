@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            background-color: #4158D0;
+            background-image: linear-gradient(to right, #e9e9e9 , #c4c1c1 );
+
+        }
+
+        
+        h1{
+            text-align: center;
+        
+        }
+
+        p{
+            text-align: center;
+            
+        }
+
+        #container{
+            position: relative;
+        }
+        
+        #conteudo{ 
+            position: absolute;
+            left: 50%;
+
+            transform: translate(-50%);
+        }
+
+        form{
+            
+            background-color: darkgray;
+            margin: auto;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        label{
+         
+        }
+
+        p{
+            padding: 10px;
+        }
+
+        #voltar{
+            
+        }
+    </style>
+
+
+</head>
+<body>
+    <main id="container">
+        <h1>Meu primeiro formulário</h1>
+        <form action="php/cadastro.php" method="POST" autocomplete="off" id="conteudo">
+            <p>
+                <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome">
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+             
+        </form>
+        
+       
+
+        <button onclick="history.go(-1);">Voltar</button>
+    </main>
+</body>
+</html>
